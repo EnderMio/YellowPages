@@ -1,0 +1,128 @@
+.index {
+    /* 首页列表 */
+    position: relative;
+    width: 750rpx;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #CFE1ED 3%, rgba(246,251,252,0.60) 40%, rgba(255,255,255,0.00) 96%);
+    .slogan {
+        /* Everything you want to know in BUPT */
+
+        position: absolute;
+        left: 60rpx;
+        top: 60rpx;
+        width: 466rpx;
+        height: 246rpx;
+                    
+        font-family: 'Gen Jyuu Gothic Light';
+        font-size: 62rpx;
+        font-weight: 200;
+        line-height: 81rpx;
+        letter-spacing: 0px;
+            
+        color: #09051C;
+    }
+    .aboutIcon {
+        /* about */
+
+        position: absolute;
+        left: 582rpx;
+        top: 102rpx;
+        width: 90rpx;
+        height: 90rpx;
+	
+    }
+    .indexWrapper {
+        position: absolute;
+        width: 650rpx;
+        top: 310rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 12rpx 50rpx;
+        @mixin sharedTitle {
+            width: 120rpx;
+            height: 40rpx;
+            font-size: 30rpx;
+            font-weight: 300;
+            line-height: 40rpx;
+            letter-spacing: 0px;
+                
+            color: #09051C;
+        
+        }
+        .campusLifeBox {
+            /* 校园生活 */
+            width: 100%;
+            height: 360rpx;
+                        margin: 20rpx 0rpx;
+            .title {
+                @include sharedTitle;
+            }
+            .campusLifeWrapper {
+                /* 校园生活模块 */
+                margin-top: 22rpx;
+                width: 650rpx;
+                height: 300rpx;
+                                    
+                .campusLifeWrapperBg {
+                    /* Frame */
+
+                    width: 650rpx;
+                    height: 300rpx;
+                    border-radius: 32rpx;
+                                            
+                    background: linear-gradient(118deg, #4D9CF9 -1%, #15BE77 102%);
+                        
+                }
+            }
+        }
+        @mixin sharedViewMore {
+            /* View More */
+
+            width: 119rpx;
+            height: 32rpx;
+                            
+            font-family: 'Gen Jyuu Gothic';
+            font-size: 24rpx;
+            font-weight: 100;
+            line-height: 31rpx;
+            letter-spacing: 0px;
+                
+            color: #FF7C32;
+                
+        }
+        .orgnizationBox {
+            /* 社团组织 */
+            width: 100%;
+            margin: 20rpx 0rpx;
+            .orgnizationTopWrapper {
+                display: flex;
+                justify-content: space-between;
+                .title {
+                    @include sharedTitle;
+                }
+                .viewMore {
+                    @include sharedViewMore;
+                }
+            }
+            .orgnizationWrapper {
+                /* 社团组织模块 */
+                width: 100%;
+                height: 300rpx;
+                display: flex;
+                overflow-x: scroll;
+                column-gap: 16rpx;
+                margin-top: 22rpx;
+                .orgnizationItem {
+                    flex-shrink: 0;
+                    width: 300rpx;
+                    height: 100%;
+                    border-radius: 32rpx;
+                    background: linear-gradient(270deg, #FEFEFF 0%, #4D9CF9 100%);
+
+                }
+            }
+        }
+    }
+}
