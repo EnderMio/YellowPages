@@ -1,6 +1,6 @@
 const enum FileType {FONT, IMG};
 const fileUrl = (name : string, type: number) : string => {
-    const fileAPI : string = 'https://files.enderr.tech:38324/';
+    const fileAPI : string = 'https://uuwhat2do.org.cn:38324/files/';
     if(type === FileType.FONT) return `url("${fileAPI}fonts/${name}")`;
     else if(type === FileType.IMG) return `${fileAPI}YellowPagesFiles/imgs/${name}`;
     else return '';
