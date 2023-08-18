@@ -1,0 +1,26 @@
+.all{
+    background: linear-gradient(152deg, #CFE1ED 3%, rgba(239,239,239,0.00) 91%);
+}
+.image{
+    width: 100%;
+}
+.box{
+    width: 650px;
+    margin-left: 50px;
+    .title{
+        margin-left: 150px;
+        align-items: center;
+        font-family: YouYuan-Regular;
+        font-size: 50px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 0em;
+        font-weight: bolder;
+        color: #3D3D3D;
+    }
+    .code{
+        margin-left: 100px;
+        width: 426px;
+        height: 472px;
+    }
+}
