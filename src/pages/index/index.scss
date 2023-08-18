@@ -19,7 +19,7 @@
         line-height: 81rpx;
         letter-spacing: 0px;
             
-        color: #09051C
+        color: #09051C;
     }
     .aboutIcon {
         /* about */
@@ -107,6 +107,7 @@
                 }
             }
             .orgnizationWrapper {
+                /* 社团组织模块 */
                 width: 100%;
                 height: 300rpx;
                 display: flex;
@@ -119,82 +120,9 @@
                     height: 100%;
                     border-radius: 32rpx;
                     background: linear-gradient(270deg, #FEFEFF 0%, #4D9CF9 100%);
-                    font-size: 38px;
-                    //font-weight: normal;
-                    line-height: 200px;
-                    letter-spacing: 5px;
-                    font-family: YouSheBiaoTiHei;
-                    .explain{
-                        color:#5699e5;
-                        line-height: 0px;
-                        letter-spacing: 10px;
-                        font-size: 80px;
-                        font-weight: bolder;
-                        font-style: italic;
-                        text-align: right;
-                    }
+
                 }
             }
         }
-        .questionBox {
-            /* 自由问答 */
-            width: 100%;
-            margin: 20rpx 0rpx;
-            .questionTopWrapper {
-                display: flex;
-                justify-content: space-between;
-                .title {
-                    @include sharedTitle;
-                }
-                .viewMore {
-                    @include sharedViewMore;
-                }
-            }
-
-            .questionWrapper {
-                /* 自由问答模块 */
-                background: #FEFEFF;
-                width: 100%;
-                height: 150rpx;
-               // overflow-y: scroll;
-                column-gap: 16rpx;
-                margin-top: 50rpx;
-                width: 100%;
-                border-radius: 32rpx;
-                background: whitesmoke;
-                .number{
-                        width: 100px;
-                        font-size: 80px;
-                        color: #FF7C32;
-                        font-weight: bolder;
-                        line-height: 100px;
-                        float: left;
-                        margin-top: 20px;
-                        margin-left: 40px;
-                    }
-                    .text{
-                        float:left;
-                        width:400px;
-                        .question {
-                            font-size: 35px;
-                            font-family: Gen Jyuu Gothic;
-                            font-weight: 250px;
-                            line-height: 100px;
-                            letter-spacing: 0px;
-                            text-align: center;
-                            color: #09051C;
-                        }
-                        .answer{
-                            font-size: 30px;
-                            line-height: 50px;
-                            font-weight: 350px;
-                            color: grey;
-                            text-align: center;
-                        }
-                    }
-            }
-        }
-
     }
-
 }

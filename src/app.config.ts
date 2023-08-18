@@ -1,9 +1,7 @@
 export default {
   pages: [
     "pages/index/index",
-    "pages/campusLife/campusLife",
-    "pages/orgnization/orgnization",
-    "pages/question/question"
+    "pages/campusLife/campusLife"
 ],
   window: {
     backgroundTextStyle: "light",
